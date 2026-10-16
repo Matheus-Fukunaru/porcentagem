@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff3f5">
+  <title>Calculadora do Amor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="heart heart-top" aria-hidden="true">♥</div>
+    <p class="eyebrow">UM POUQUINHO DE ROMANCE</p>
+    <h1>Calculadora do Amor</h1>
+    <p class="subtitle">Será que os nomes combinam? Descubra aqui!</p>
+
+    <form id="love-form">
+      <label for="name1">Primeiro nome</label>
+      <input id="name1" type="text" placeholder="Digite o primeiro nome" autocomplete="off" maxlength="100" required>
+      <div class="heart heart-middle" aria-hidden="true">♥</div>
+      <label for="name2">Segundo nome</label>
+      <input id="name2" type="text" placeholder="Digite o segundo nome" autocomplete="off" maxlength="100" required>
+      <button type="submit">Calcular compatibilidade ♡</button>
+    </form>
+
+    <section class="result" id="result" aria-live="polite" hidden>
+      <p class="result-heading">A compatibilidade de vocês é...</p>
+      <output class="percentage" id="percentage"></output>
+      <div class="progress"><div id="progress-fill" class="progress-fill"></div></div>
+      <p class="names" id="names"></p>
+    </section>
+  </main>
+</body>
+</html>
